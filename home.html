@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Buddy</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">Travel Buddy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a> </li>
+    </ul>
+</div>
+</nav>
+<div class="container mt-2">
+<div class="row">
+<div class="col-12">
+<div class="jumbotron">
+<h1 class="text-center">Travel: Safer, Smarter, Better.</h1>
+<p class="text-center">Know everything you need to about your next vacation all at the tip of your fingers.</p>
+<head>
+</head>
+<link href="dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript">
+      jQuery(document).ready(function() {
+        jQuery('#vmap').vectorMap({ 
+          map: 'europe_en', 
+          enableZoom: false,
+          color: '#90d16b',
+          borderColor: '#000000',
+          borderOpacity: .75,
+          onRegionClick: function(element, code, region)
+        {
+        var message = code
+            + '.html'
+          window.location.href = message
+
+        }
+          
+        });
+      });
+      </script>
+</head>
+<body>
+<div id="vmap" style="width: 75%; height: 400px; margin: 0px auto; position: relative; overflow: hidden;"></div>
+</body>
+<body>
+</body>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-12">
+      <h2 class="text-center">Why us?</h2>
+      <p>We provide all the information you need about your next travels. Whether its family visits or a relaxing vacation you can count on Travel Buddy to have your back.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+      <h2 class="text-center">How does it work?</h2>
+      <p>Click any country you are visiting and get the most up-to-date information about the country you are visiting. Yep it's that easy!</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+      <h2 class="text-center">Is this information right?</h2>
+      <p>We dynamically source our data from organizations such as the U.S State Department and other organizations so you can rest knowing you are getting the most up to date data.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+      <h2>How much does it cost?</h2>
+      <p>Our service is absolutely free! We believe in using our powers to provide travelers with a conveinent place to get all the information needed for their travels.</p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row"></div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-md-0 mb-2">
+      <h2>Contact Us</h2>
+      <address>
+      <strong>Travel Buddy, Inc.</strong><br>
+      Univsity of Florida, Gainesville,<br>
+      FL, 32611, US<br>
+      <abbr title="Phone">P:</abbr>(123) 456-7890
+      </address>
+  
+    </div>
+    <div class="col-lg-4 col-md-6 col-12">
+      <h2>Sources</h2>
+      <ul class="list-unstyled">
+       <p>U.S State Department</p>
+		 <p>Wikipedia</p>
+		  <p>Image commons</p>
+		  <p>Weather Widget</p>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-12">
+      <h2>About Us</h2>
+      <p>We created this not only because we are programmers, but also travelers at heart. We realized there was no easy place for travlers like us to get the most updated information on our destinations. So we seeked out to change this.</p>
+      <p>Using open source software and publicly available data, we created travel buddy to give travelers the information they need in one place but better. Our website updates automatically as soon as there is any change so you can rest assured the information you are getting is recent.</p>
+    </div>
+  </div>
+</div>
+<hr>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.0.0.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="dist/jquery.vmap.js"></script>
+<script type="text/javascript" src="dist/maps/jquery.vmap.europe.js" charset="utf-8"></script>
+</body>
+</html>
